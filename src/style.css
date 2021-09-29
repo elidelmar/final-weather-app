@@ -1,0 +1,65 @@
+h1 {
+  text-align: right;
+  font-size: 400px;
+  padding-top: 35px;
+}
+
+li {
+  list-style-type: none;
+}
+
+.weather-app {
+  background: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+  max-width: 500px;
+  margin-top: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+  position: relative;
+  padding: 50px;
+  border: 1px solid black;
+  border-radius: 15px;
+  text-align: right;
+  box-shadow: 0 5px 7px 0 #93deff;
+}
+
+.searchBar {
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+}
+input {
+  border-radius: 10px;
+  border: 1px solid black;
+  height: max-content;
+  padding-top: 5px;
+  padding-left: 3px;
+  padding-bottom: 5px;
+}
+
+.searchBar-btn,
+.current-btn {
+  background: #e3e3e3;
+  border-radius: 12px;
+  border: 1px solid black;
+  box-shadow: 1px 1px 1px 1px black;
+  font-size: 18px;
+  font-family: monospace;
+  cursor: pointer;
+}
+
+.searchBar-btn:hover,
+.current-btn:hover {
+  background: #8dc6ff;
+}
+
+.gitLink {
+  font-size: 11px;
+  text-align: center;
+  padding-top: 20px;
+  font-family: monospace;
+}
+
+.col-6 {
+  font-size: 14px;
+}

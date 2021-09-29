@@ -6,15 +6,71 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://kit.fontawesome.com/a9ceead37a.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <title>Weather App</title>
 </head>
-
 <body>
-    <div class="container">
-    </div>
-    <script src="src/app.js"></script>
+    <body>
+        <div class="container">
+            <div class="weather-app">
+                <div class="searchBar">
+                    <form id="search-form">
+                        <input type="text" autocomplete="off" placeholder="Search new city" id="searchCity" />
+                        <input type="submit" value="Search" id="city-input" class="searchBar-btn">
+                        <input type="submit" value="Current" id="currentButton" class="current-btn">
+                    </form>
+                </div>
+                <h1 id="city"> Atlanta </h1>
+                <ul>
+                    <li id="today-date"> Friday 12:00 </li>
+                    <li id="description">Sunny</li>
+                </ul>
+                <div class="row">
+                    <div class="col-6">
+                        <ul>
+                            <li><span class="sun-icon"><i class="fas fa-sun"></i></span>
+                                <span class="temperature" id="temp"> 78</span>
+                                <span class="units">
+                                    <a href="#" id="fahrenheit-link">°F </a> | <a href="#" id="celsius-link">°C</a>
+                                </span>
+                            </li>
+                        </ul>
+    
+                    </div>
+    
+                    <div class="col-6">
+                        <ul>
+                            <li>Percipatation: 10% </li>
+                            <li>Humidity: <span id="humidity"></span>%</li>
+                            <li>Wind: <span id="wind"></span> km/h</li>
+                        </ul>
+                    </div>
+    
+                    <div class="weather-col">
+                        <div class="row row-cols-5">
+                            <div class="col">Saturday<br> 86°F<br><span class="temp-icons"><i class="fas fa-sun"></i></span>
+                            </div>
+                            <div class="col">Sunday<br> 89°F<br> <span class="temp-icons"><i
+                                        class="fas fa-cloud-showers-heavy"></i></span></div>
+                            <div class="col">Monday<br> 76°F<br><span class="temp-icons"><i class="fas fa-sun"></i></span>
+                            </div>
+                            <div class="col">Tuesday<br> 83°F<br><span class="temp-icons"><i class="fas fa-sun"></i></span>
+                            </div>
+                            <div class="col">Thursday<br> 72°F <br> <span class="temp-icons"><i
+                                        class="fas fa-cloud-showers-heavy"></i></span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="gitLink"><a href="https://github.com/elidelmar/my-weather-app"> Open Source Code by Elisabeth
+                    Marquez</div>
+        </div>
+    
+        </div>
+        <script src="src/app.js"></script>
 </body>
 
 </html>
