@@ -18,30 +18,32 @@
             <div class="weather-app">
                 <div class="searchBar">
                     <form id="search-form">
-                        <input type="text" autocomplete="off" placeholder="Search new city" id="searchCity" />
+                        <input type="text" autocomplete="off" placeholder="  Search new city" id="searchCity" />
                         <input type="submit" value="Search" id="city-input" class="searchBar-btn">
                         <input type="submit" value="Current" id="currentButton" class="current-btn">
                     </form>
                 </div>
                 <h1 id="city"> Atlanta </h1>
+                
                 <ul>
                     <li id="today-date"> Friday 12:00 </li>
+                    <li><span class="temperature" id="temp"> 78</span>
+                    <span class="units">
+                        <a href="#" id="fahrenheit-link">°F </a> | <a href="#" id="celsius-link">°C</a>
+                    </span></li>
                     <li id="description">Sunny</li>
                 </ul>
                 <div class="row">
                     <div class="col-6">
                         <ul>
-                            <li><span class="sun-icon"><i class="fas fa-sun"></i></span>
-                                <span class="temperature" id="temp"> 78</span>
-                                <span class="units">
-                                    <a href="#" id="fahrenheit-link">°F </a> | <a href="#" id="celsius-link">°C</a>
-                                </span>
-                            </li>
+                            <li>
+                                <span class="temperature" id="sun-icon"><i class="fas fa-cloud-sun"></i></span>
+                        </li>
                         </ul>
     
                     </div>
     
-                    <div class="col-6">
+                    <div class="col-6" id="otherDescriptions">
                         <ul>
                             <li>Percipatation: 10% </li>
                             <li>Humidity: <span id="humidity"></span>%</li>
@@ -51,22 +53,24 @@
     
                     <div class="weather-col">
                         <div class="row row-cols-5">
-                            <div class="col">Saturday<br> 86°F<br><span class="temp-icons"><i class="fas fa-sun"></i></span>
+                            <div class="col">Sat<br> 86°F<br><span class="temp-icons"><i class="fas fa-sun"></i></span>
                             </div>
-                            <div class="col">Sunday<br> 89°F<br> <span class="temp-icons"><i
+                            <div class="col">Sun<br> 89°F<br> <span class="temp-icons"><i
                                         class="fas fa-cloud-showers-heavy"></i></span></div>
-                            <div class="col">Monday<br> 76°F<br><span class="temp-icons"><i class="fas fa-sun"></i></span>
+                            <div class="col">Mon<br> 76°F<br><span class="temp-icons"><i class="fas fa-sun"></i></span>
                             </div>
-                            <div class="col">Tuesday<br> 83°F<br><span class="temp-icons"><i class="fas fa-sun"></i></span>
+                            <div class="col">Tues<br> 83°F<br><span class="temp-icons"><i class="fas fa-sun"></i></span>
                             </div>
-                            <div class="col">Thursday<br> 72°F <br> <span class="temp-icons"><i
+                            <div class="col">Wed<br> 72°F <br> <span class="temp-icons"><i
                                         class="fas fa-cloud-showers-heavy"></i></span></div>
                         </div>
                     </div>
                 </div>
             </div>
+            <footer>
             <div class="gitLink"><a href="https://github.com/elidelmar/my-weather-app"> Open Source Code by Elisabeth
                     Marquez</div>
+                    </footer>
         </div>
     
         </div>
