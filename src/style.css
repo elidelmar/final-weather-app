@@ -64,12 +64,13 @@ input {
   font-size: 14px;
 }
 
-#icon {
+#icon  {
   position: relative;
   top: -120px;
   left: -40px;
   text-align: left;
 }
+
 .temperature {
   font-size: 50px;
   font-family: monospace;
