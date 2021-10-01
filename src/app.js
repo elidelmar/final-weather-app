@@ -19,7 +19,12 @@ function displayWeatherCondition(response) {
   document.querySelector("#temp").innerHTML = Math.round(
     response.data.main.temp
   );
-
+ let iconElement = document.querySelector("#icon");
+  iconElement.setAttribute(
+    "src",
+    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}.png`
+  );
+  iconElement.setAttribute("alt", response.data.weather[0].description);
   document.querySelector("#humidity").innerHTML = response.data.main.humidity;
   document.querySelector("#wind").innerHTML = Math.round(
     response.data.wind.speed
@@ -60,3 +65,4 @@ function current(event) {
 }
 let currentButton = document.querySelector("#currentButton");
 currentButton.addEventListener("click", current);
+

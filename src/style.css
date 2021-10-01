@@ -64,10 +64,10 @@ input {
   font-size: 14px;
 }
 
-#sun-icon {
-  font-size: 140px;
+#icon {
   position: relative;
-  top: -90px;
+  top: -120px;
+  left: -40px;
   text-align: left;
 }
 .temperature {
@@ -82,8 +82,9 @@ input {
   font-family: monospace;
 }
 
-#today-date, #description, #otherDescriptions {
+#today-date,
+#description,
+#otherDescriptions {
   font-family: monospace;
   font-weight: 200;
 }
-
