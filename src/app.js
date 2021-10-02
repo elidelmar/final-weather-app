@@ -84,4 +84,5 @@ let fahrenheitConvert = document.querySelector("#fahrenheit");
 fahrenheitConvert.addEventListener("click", convertToFahrenheit);
 
 let celsiusLink = document.querySelector("#celsius");
+celsiusLink.addEventListener("click", convertToCelsius);
 
