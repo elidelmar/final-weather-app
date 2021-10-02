@@ -15,6 +15,8 @@ li.innerHTML = `${day} ${hours}:${minutes}`;
 
 //weeek 5
 function displayWeatherCondition(response) {
+  celsiusValue = Math.round(response.data.main.temp);
+  document.querySelector("#temperature").innerHTML = Math.round(celsiusValue);
   document.querySelector("#city").innerHTML = response.data.name;
   document.querySelector("#temp").innerHTML = Math.round(
     response.data.main.temp
@@ -65,4 +67,20 @@ function current(event) {
 }
 let currentButton = document.querySelector("#currentButton");
 currentButton.addEventListener("click", current);
+//week 7 integration 
+function convertToFahrenheit(event) {
+  event.preventDefault();
+  let temperatureElement = document.querySelector("#temperature");
+  let fahrenheitValue = (celsiusValue * 9) / 5 + 32;
+  temperatureElement.innerHTML = Math.round(fahrenheitValue);
+}
+function convertToCelsius(event) {
+  event.preventDefault();
+  let temperatureElement = document.querySelector("#temperature");
+  temperatureElement.innerHTML = celsiusValue;
+}
+let fahrenheitConvert = document.querySelector("#fahrenheit");
+fahrenheitConvert.addEventListener("click", convertToFahrenheit);
+let celsiusLink = document.querySelector("#celsius");
+celsiusLink.addEventListener("click", convertToCelsius);
 
