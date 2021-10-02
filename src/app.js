@@ -18,9 +18,7 @@ function displayWeatherCondition(response) {
   celsiusValue = Math.round(response.data.main.temp);
   document.querySelector("#temperature").innerHTML = Math.round(celsiusValue);
   document.querySelector("#city").innerHTML = response.data.name;
-  document.querySelector("#temp").innerHTML = Math.round(
-    response.data.main.temp
-  );
+ 
  let iconElement = document.querySelector("#icon");
   iconElement.setAttribute(
     "src",
